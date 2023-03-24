@@ -171,6 +171,7 @@ footer {
 .instagram:hover {
     cursor: pointer;
     border: 1.18px solid #E880E8;
+    filter: invert(44%) sepia(74%) saturate(1589%) hue-rotate(287deg) brightness(99%) contrast(92%);
 }
 
 .attribution {
