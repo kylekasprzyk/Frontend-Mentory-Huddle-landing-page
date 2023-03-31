@@ -36,6 +36,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 ## Built with
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white)
+
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white)
 
 ## Author
