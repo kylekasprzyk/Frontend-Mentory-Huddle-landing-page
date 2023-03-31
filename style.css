@@ -63,6 +63,19 @@ h6 {
     isolation: isolate;
 }
 
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 .logo-image {
     width: 13.4375rem;
 }
@@ -85,37 +98,37 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
     color: #FFFFFF;
-    padding-right: 118px;
+    padding-right: 7.375rem;
 }
 
 .text-container-p {
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
     color: #FFFFFF;
-    padding-right: 85px;
+    padding-right: 5.313rem;
     margin-top: 1.3125rem;
 }
 
 .register-btn {
-    height: 56px;
-    width: 200px;
+    height: 3.5rem;
+    width: 12.5rem;
     background: #FFFFFF;
-    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
-    border-radius: 28px;
+    box-shadow: 0.125rem 0.25rem 0.563rem 0.188rem rgba(0, 0, 0, 0.258633);
+    border-radius: 1.75rem;
     border: none;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
     text-align: center;
     color: #684BB1;
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 
 .register-btn:hover {
@@ -140,20 +153,20 @@ footer {
 .facebook,
 .twitter,
 .instagram {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 1.18px solid #FFFFFF;
     border-radius: 50%;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 16px;
+    margin-right: 1rem;
     color: #FFFFFF;
 }
 
 .facebook-img {
-    height: 19px;
+    height: 1.188rem;
 }
 
 
@@ -179,7 +192,7 @@ footer {
 
 .attribution p {
     font-family: 'Poppins', sans-serif;
-    font-size: 11px;
+    font-size: 0.688rem;
     text-align: center;
     color: #FFFFFF;
 }
@@ -228,17 +241,17 @@ footer {
     }
 
     .logo-image {
-        width: 120px;
+        width: 7.5rem;
     }
 
     .image-container {
         width: auto;
-        margin: 40px;
+        margin: 2.5rem;
     }
 
     .text-container {
         width: auto;
-        margin: 0px 36px;
+        margin: 0 2.25rem;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -249,8 +262,8 @@ footer {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
         text-align: center;
         color: #FFFFFF;
         padding-right: 0;
@@ -258,57 +271,57 @@ footer {
 
     .text-container-p {
         padding-right: 0;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         text-align: center;
         color: #FFFFFF;
-        margin-top: 16px;
+        margin-top: 1rem;
     }
 
     .register-btn {
-        height: 40px;
-        width: 200px;
+        height: 2.5rem;
+        width: 12.5rem;
         background: #FFFFFF;
-        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
-        border-radius: 20px;
+        box-shadow: 0.063rem 0.188rem 0.313rem rgba(0, 0, 0, 0.269022);
+        border-radius: 1.25rem;
         border: none;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
         text-align: center;
         color: #684BB1;
-        margin-top: 24px;
-        margin-bottom: 64px;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
     }
 
     .icons {
         display: flex;
         justify-content: center;
         margin: auto;
-        gap: 10.5px;
+        gap: 0.656rem;
         margin-bottom: 1rem;
     }
 
     .facebook,
     .twitter,
     .instagram {
-        height: 28px;
-        width: 28px;
+        height: 1.75rem;
+        width: 1.75rem;
         margin-right: 0;
     }
 
     .facebook-img {
-        width: 6.11px;
-        height: 13px;
+        width: 0.382rem;
+        height: 0.813rem;
     }
 
     .twitter-img {
-        width: 13px;
-        height: 13px;
+        width: 0.813rem;
+        height: 0.813rem;
     }
 
     .instagram-img {
-        width: 14px;
-        height: 14px;
+        width: 0.875rem;
+        height: 0.875rem;
     }
 
 
