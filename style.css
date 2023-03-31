@@ -188,6 +188,25 @@ footer {
     color: #00C7FA;
 }
 
+.typing-text {
+    width: 47ch;
+    animation: typing 3500ms steps(47), blink 500ms step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
 @media screen and (max-width: 1200px) {
     body {
         background: #684BB1;
